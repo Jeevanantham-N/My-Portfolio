@@ -1,0 +1,49 @@
+/* app.css */
+
+/* Completely disable text selection globally (including form controls) */
+*,
+*::before,
+*::after {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 180ms ease-in-out;
+}
+
+/* Ensure hero name won't be clipped; clamp is used inline */
+h1 {
+  overflow: visible !important;
+  text-overflow: clip !important;
+  white-space: nowrap !important;
+  margin: 0;
+}
+
+/* Remove tap highlight on mobile */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Accessibility: visible focus states (even though selection is disabled) */
+input:focus, textarea:focus, button:focus, a:focus {
+  outline: 2px solid rgba(59, 130, 246, 0.12);
+  outline-offset: 2px;
+}
+
+/* card-soft utility */
+.card-soft {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.25);
+}
+
+/* small-screen padding tweak */
+@media (max-width: 420px) {
+  .max-w-7xl.mx-auto.px-8 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
