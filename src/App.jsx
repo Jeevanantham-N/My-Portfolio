@@ -11,92 +11,152 @@ const EMAILJS_TEMPLATE_ID = 'template_0dzqbif';
 const EMAILJS_PUBLIC_KEY = 'vD1FQ2paQhZ92PXCg';
 
 const resumeData = {
-  name: 'N Jeevanantham',
-  email: 'jeevasatn@gmail.com',
-  phone: '+91 98425 98260',
-  location: 'Salem, India',
-  linkedin: 'https://www.linkedin.com/in/jeevanantham001/',
-  github: 'https://github.com/Jeevanantham-N',
-  role: 'Adobe Experience Platform Developer',
-  summary:
-    'Adobe-certified engineer driving data-driven solutions using Launch, AEP, Adobe Analytics, Customer Journey Analytics, Real-Time CDP, and Journey Optimizer — delivering clean, actionable insights across platforms.',
-  experiences: [
+  "name": "N Jeevanantham",
+  "email": "jeevasatn@gmail.com",
+  "phone": "+91 98425 98260",
+  "location": "Salem, India",
+  "linkedin": "https://www.linkedin.com/in/jeevanantham001/",
+  "github": "https://github.com/Jeevanantham-N",
+  "role": "Software Engineer",
+  "summary": "Adobe-certified expert driving data-driven solutions using Launch, AEP, Adobe Analytics, Customer Journey Analytics, Real-Time Customer Data Platform and Adobe Journey Optimizer — delivering clean, actionable insights across platforms.",
+  "experiences": [
     {
-      title: 'Engineer - Technology',
-      company: 'Virtusa',
-      location: 'Chennai - DLF',
-      period: '04/2021 - Present',
-      bullets: [
-        'Adobe Launch & AEP Implementation: Implemented user behavior tracking by configuring Adobe Launch rules and setting up schemas, datasets, and dataflows in Adobe Experience Platform (AEP), ensuring accurate and consistent data collection.',
-        'Data Validation & Analytics Insight: Validated data flow post-implementation and analyzed user behavior patterns using Adobe Analytics and Customer Journey Analytics to generate actionable insights for business decision-making.',
-        'Adobe Experience Platform Implementation: Played a major role in migrating seven web properties to AEP with focus on Web SDK setup, Launch configuration, and end-to-end validation. Additionally, supported AEP Mobile SDK integration for iOS and Android through research-based troubleshooting and testing, ensuring tracking consistency and resolution of key issues.',
-        'Internal Development Work: Built an internal intranet property from scratch with integrated analytics, improving internal process visibility and reporting.',
-        'Team Collaboration: Guided a team of 2 associates — assigning tasks, resolving blockers, and ensuring timely delivery of project goals.',
-        'Recognition: Received appreciation from clients and stakeholders for delivering a successful end-to-end migration across web and mobile platforms.',
+      "title": "Senior Associate Technology L1",
+      "company": "Publicis Sapient",
+      "location": "Bengaluru",
+      "period": "12/2025 - Present",
+      "bullets": [
+        "Currently associated with Publicis Sapient, working on Adobe Experience Platform (AEP) and Adobe Journey Optimizer (AJO) implementations aligned to client delivery standards."
+      ]
+    },
+    {
+      "title": "Engineer",
+      "company": "Virtusa",
+      "location": "Chennai",
+      "period": "09/2021 - 11/2025",
+      "bullets": [
+        "Contributed to a multi-year Digital Marketing Services engagement for a US financial client, providing sustained support for Adobe Analytics and participating in a two-year migration of seven web properties to Adobe Experience Platform (AEP).",
+        "Converted legacy Adobe Analytics tracking into AEP-compliant Web SDK implementations via Adobe Launch, following consistent event naming, data element mapping, and transformation rules to reduce downstream ETL effort.",
+        "Designed AEP XDM schemas, supporting datasets, and dataflows to modernize the data supply chain and to enable Real-Time CDP profile unification; collaborated with stakeholders to map legacy variables to XDM types and to enforce schema validation.",
+        "Built audiences and activation logic within AEP and contributed to orchestration in Adobe Journey Optimizer (AJO), implementing event-driven abandoned-loan re-targeting flows and a secure Inbox Messaging capability using Custom Actions with payload throttling to protect delivery performance.",
+        "Implemented dataset-driven suppression and frequency-capping checks by querying AEP system datasets (e.g., 30-day suppression window) to ensure journeys respected contact limits and compliance requirements.",
+        "Owned post-migration validation tasks: used AEP Query Service, Customer Journey Analytics, and Adobe Analytics to cross-reference events, reconcile profiles, and generate business-ready reports verifying tracking parity and data quality.",
+        "Supported AEP Mobile SDK proofs-of-concept and iOS/Android integrations via research-driven troubleshooting: triaged event gaps, coordinated fixes with mobile engineers, and validated cross-platform consistency.",
+        "Established tag-management governance using Adobe Launch—implemented rules, data elements, and extension configurations to standardize capture across properties and to minimize transformation work downstream.",
+        "Built internal tooling (intranet property) with integrated analytics to improve operational visibility and mentored two associates by assigning tasks, removing blockers, and helping deliver migration milestones.",
+        "Recognized with the 'Extra Mile Award' for sustained ownership of data quality and for contributing to successful analytics modernization across web and mobile platforms."
+      ]
+    },
+    {
+      "title": "Software Trainee - Internship",
+      "company": "Granite River Labs Pvt Ltd.",
+      "location": "Bangaluru",
+      "period": "12/2020 - 03/2021",
+      "bullets": [
+        "Developed a Real-Time USB/Serial Device Monitor using Python, PySerial, and Tkinter to support lab validation: enumerated ports, parsed device metadata, normalized identifiers, and displayed connected devices with grouped summaries and live counts.",
+        "Implemented OS-specific parsing and normalization flows for Windows and Linux to handle platform-dependent naming conventions and port formats, reducing false positives and improving device detection accuracy during plug/unplug verification.",
+        "Built a responsive GUI dashboard with live updates and logging to accelerate hardware test cycles and provide immediate visibility into peripheral connectivity for QA and engineering teams.",
+        "Engineered a Network Monitoring Tool using ping diagnostics and a lightweight data pipeline to capture latency and availability metrics for target domains; streamed results to a simple Flask endpoint and rendered dynamic graphs for real-time performance analysis and offline export."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BE CSE (Anna University)",
+      "institution": "Knowledge Institute of Technology, Salem",
+      "period": "06/2016 - 10/2020"
+    }
+  ],
+  "tools": [
+    "Adobe Experience Platform",
+    "Adobe Journey Optimizer",
+    "Customer Journey Analytics",
+    "Real-Time Customer Data Platform",
+    "AEP XDM Schema Design",
+    "Adobe AEP: Data Ingestion & Config",
+    "Adobe Launch",
+    "Adobe Analytics",
+    "JavaScript",
+    "JQuery",
+    "HTML/CSS",
+  ],
+  "projects": [
+    {
+      "title": "Digital Federal Credit Union Digital Marketing Solutions",
+      "desc": "Part of a multi-year digital transformation engagement for a major US financial institution. Responsibilities included sustaining legacy Adobe Analytics operations and contributing to a two-year migration to Adobe Experience Platform (AEP). Converted legacy tracking into AEP Web SDK implementations via Adobe Launch, designed XDM schemas and supporting datasets to match Real-Time CDP event and profile models, and implemented dataflows to ingest, persist, and unify profile and event data. Built audiences for marketing activation and contributed to real-time orchestration in Adobe Journey Optimizer (AJO) — implementing abandoned-loan re-targeting and designing a secure inbox messaging capability using Custom Actions with payload throttling. Developed dataset-driven suppression checks and frequency-capping by querying system datasets to enforce a 30-day suppression window. Performed rigorous post-migration validation using AEP Query Service, Adobe Analytics, and Customer Journey Analytics to reconcile events, validate profile counts, and produce business-ready reporting. Supported AEP Mobile SDK POC and mobile telemetry parity checks, and documented implementation patterns, dataset mapping templates, and runbooks to institutionalize delivery practices.",
+      "repo": [],
+      "tech": [
+        "Adobe Experience Platform",
+        "Adobe Journey Optimizer",
+        "Real-Time CDP",
+        "Adobe Analytics",
+        "Adobe Launch"
+      ]
+    },
+    {
+      "title": "Network Monitoring Tool",
+      "desc": "Built a network monitoring utility that leverages ping-based diagnostics to capture latency and packet-loss metrics for configured domains. Implemented continuous sampling and streaming of metrics to a Flask endpoint, and rendered real-time graphs in a lightweight front-end view. Designed data export and logging to support post-hoc analysis and trend detection for network performance optimization.",
+      "repo": [],
+      "tech": [
+        "JavaScript",
+        "python",
+        "Flask"
+      ]
+    },
+    {
+      "title": "Real-Time Device Monitor",
+      "desc": "Developed a desktop utility to monitor USB and serial device connectivity in real time. The tool enumerates available ports using PySerial, extracts and normalizes device metadata (VID/PID, serial identifiers), and displays connected devices in a Tkinter GUI with grouped summaries and counts. Implemented separate parsing and normalization flows for Windows and Linux to handle OS-specific naming conventions and port formats. The monitor provides immediate plug/unplug feedback, logs events for offline analysis, and serves as a lab validation aid for hardware testing.",
+      "repo": [
+        "https://github.com/Jeevanantham-N/tkinter-live-updating-active-ports"
       ],
+      "tech": [
+        "Python",
+        "Tkinter GUI",
+        "PySerial"
+      ]
     },
     {
-      title: 'Software Trainee - Internship',
-      company: 'Granite River Labs Pvt Ltd.',
-      location: 'Bangalore',
-      period: '01/2020 - 03/2020',
-      bullets: [
-        'Engineered a dynamic network monitoring tool utilizing ping commands, precisely measuring data transfer rates for a designated domain. Implemented seamless data transmission and real-time updates, presented through an intuitive graphical interface. This project not only facilitated instant performance monitoring but also empowered detailed analysis, enhancing insights into network efficiency and potential optimizations.',
+      "title": "Online PG/Hostel Finder",
+      "desc": "PG Spotter — a full-stack platform to simplify PG/hostel discovery. Implemented backend REST services with Java and Spring for data processing, search, and authentication; built a responsive React.js frontend with filters, map integration, and session management; persisted data with MySQL and applied indexing and query optimization for responsive search results. Repositories include separate frontend and backend codebases demonstrating modular architecture.",
+      "repo": [
+        "https://github.com/Jeevanantham-N/findmypg-spring",
+        "https://github.com/Jeevanantham-N/findmypg-reactjs"
       ],
-    },
-  ],
-  education: [
-    {
-      degree: 'BE CSE (Anna University)',
-      institution: 'Knowledge Institute of Technology, Salem',
-      period: '06/2016 - 10/2020',
-    },
-  ],
-  tools: [
-    'Adobe Launch',
-    'Adobe Experience Platform',
-    'Adobe Analytics',
-    'Real-Time Customer Data Platform',
-    'Customer Journey Analytics',
-    'Adobe Journey Optimizer',
-    'AEP XDM Schema Design',
-    'Adobe AEP: Data Ingestion & Config',
-    'JavaScript',
-    'JQuery',
-    'Python',
-    'Java',
-  ],
-  projects: [
-    {
-      title: 'Real-Time Device Monitor',
-      desc: 'Developed a real-time USB device monitoring application using Python and Tkinter GUI, enabling dynamic detection of device insertion/removal events through system-level polling, with responsive UI updates and smooth user interaction. Implemented robust data parsing logic to track device metadata and status changes, offering live insights into connected peripherals.',
-      repo: ['https://github.com/Jeevanantham-N/tkinter-live-updating-active-ports'],
-      tech: ['Python', 'Tkinter GUI'],
+      "tech": [
+        "Java/Spring",
+        "React JS",
+        "MySQL"
+      ]
     },
     {
-      title: 'PG Spotter',
-      desc: 'Spearheaded the development of an online platform catering to personalized PG/hostel searches. Engineered the backend using Java and the Spring framework, orchestrating data processing and robust authentication mechanisms. The frontend, crafted with React JS, delivers a responsive and intuitive user interface. Leveraged MySQL for efficient data storage and retrieval, ensuring a seamless and efficient database infrastructure.',
-      repo: [
-        'https://github.com/Jeevanantham-N/findmypg-spring',
-        'https://github.com/Jeevanantham-N/findmypg-reactjs',
-      ],
-      tech: ['Java/Spring', 'React JS', 'MySQL'],
-    },
+      "title": "Salon System",
+      "desc": "Developed a salon booking and seat-allocation system using Python/Flask with Firebase for real-time persistence. Implemented availability checks, booking workflows, and allocation logic to prevent double-booking and to optimize slot utilization. Built administrative interfaces for service and schedule management and designed the system for secure, scalable data storage and retrieval.",
+      "repo": [],
+      "tech": [
+        "Firebase",
+        "JavaScript",
+        "python",
+        "Flask"
+      ]
+    }
   ],
-  certifications: [
-    'Adobe Certified Expert - Adobe Analytics Developer',
-    'Adobe Certified Expert - Adobe Analytics Business Practitioner',
-    'Oracle Certified Java Professional (OCA)',
-    'Virtusa Certified GenAI Assisted Engineer',
+  "certifications": [
+    "Adobe Certified Expert - Adobe Analytics Developer",
+    "Adobe Certified Expert - Adobe Analytics Business Practitioner",
+    "Oracle Certified Java Professional (OCA)",
+    "Virtusa Certified GenAI Assisted Engineer"
   ],
-  awards: [
+  "awards": [
     {
-      title: 'Extra Mile Award - Virtusa',
-      date: '01/2024 - 04/2024',
-      desc: "Recognized with the prestigious 'Extra Mile Award' for consistently exceeding expectations and delivering outstanding performance within my team.",
+      "title": "Extra Mile Award - Virtusa",
+      "date": "2024",
+      "desc": "Recognized with the 'Extra Mile Award' for consistently exceeding expectations, maintaining high data quality, and delivering outstanding performance during the AEP migration and optimization phases."
     },
-    { title: 'Gold badge from Hackerrank', desc: 'Have got a Gold badge from Hackerrank by solved 100+ problems.' },
-  ],
+    {
+      "title": "Gold badge from Hackerrank",
+      "desc": "Awarded Gold badge on HackerRank after solving 100+ problems."
+    }
+  ]
 };
 
 // small circular bullet
