@@ -18,7 +18,7 @@ const resumeData = {
   "linkedin": "https://www.linkedin.com/in/jeevanantham001/",
   "github": "https://github.com/Jeevanantham-N",
   "role": "Software Engineer",
-  "summary": "Adobe-certified expert driving data-driven solutions using Launch, AEP, Adobe Analytics, Customer Journey Analytics, Real-Time Customer Data Platform and Adobe Journey Optimizer — delivering clean, actionable insights across platforms.",
+  "summary": "Adobe-certified expert driving data-driven solutions and enterprise platform reliability using AEP, Customer Journey Analytics, Adobe Journey Optimizer, Adobe Orchestration Campaign, AEP Query Service — delivering clean actionable insights and automated, high-scale operations.",
   "experiences": [
     {
       "title": "Senior Associate Technology L1",
@@ -26,7 +26,11 @@ const resumeData = {
       "location": "Bengaluru",
       "period": "12/2025 - Present",
       "bullets": [
-        "Currently associated with Publicis Sapient, working on Adobe Experience Platform (AEP) and Adobe Journey Optimizer (AJO) implementations aligned to client delivery standards."
+        "Collaborating on enterprise AEP platform operations and reliability for a major healthcare client (UHG), governing multi-sandbox environments and helping manage 230+ live real-time customer journeys.",
+        "Engineered an automated data recovery pipeline by writing complex AEP Query Service scripts to identify, categorize, and extract failed profiles from Adobe Journeys, routing them to Azure Blob Storage for upstream teams to reprocess.",
+        "Developed SQL-based outcome monitoring to track the success rate of automated retries, validating if reprocessed profiles successfully completed their journeys or hit new errors.",
+        "Acting as a production gatekeeper for AEP, AJO, and Adobe Campaign Orchestration deployments, assisting in root-cause analysis (RCA) to troubleshoot complex pipeline failures.",
+        "Partnering with Adobe Enterprise Support and internal teams to identify core platform defects, log support tickets, and validate beta features."
       ]
     },
     {
@@ -71,16 +75,28 @@ const resumeData = {
     "Adobe Experience Platform",
     "Adobe Journey Optimizer",
     "Customer Journey Analytics",
+    "AEP Query Service",
     "Real-Time Customer Data Platform",
-    "AEP XDM Schema Design",
-    "Adobe AEP: Data Ingestion & Config",
+    "Adobe Campaign Orchestration",
     "Adobe Launch",
     "Adobe Analytics",
     "JavaScript",
     "JQuery",
-    "HTML/CSS",
+    "HTML/CSS"
   ],
   "projects": [
+    {
+      "title": "Enterprise AEP Platform Operations & Reliability (UHG)",
+      "desc": "Supported high-throughput data ingestion and journey monitoring for a major healthcare client. Built complex AEP Query Service SQL pipelines to scan daily journey events, identifying failed profiles based on AJO error codes and routing them to Azure Blob Storage for upstream teams to reprocess. Developed validation queries to track the outcome of automated retries, ensuring profiles successfully completed their journeys. Acted as a production gatekeeper for AEP, AJO, and Campaign deployments across multi-sandbox environments, and partnered with Adobe Support to report defects and test platform updates.",
+      "repo": [],
+      "tech": [
+        "Adobe Experience Platform",
+        "Adobe Journey Optimizer",
+        "AEP Query Service",
+        "Azure Blob Storage",
+        "SQL"
+      ]
+    },
     {
       "title": "Digital Federal Credit Union Digital Marketing Solutions",
       "desc": "Part of a multi-year digital transformation engagement for a major US financial institution. Responsibilities included sustaining legacy Adobe Analytics operations and contributing to a two-year migration to Adobe Experience Platform (AEP). Converted legacy tracking into AEP Web SDK implementations via Adobe Launch, designed XDM schemas and supporting datasets to match Real-Time CDP event and profile models, and implemented dataflows to ingest, persist, and unify profile and event data. Built audiences for marketing activation and contributed to real-time orchestration in Adobe Journey Optimizer (AJO) — implementing abandoned-loan re-targeting and designing a secure inbox messaging capability using Custom Actions with payload throttling. Developed dataset-driven suppression checks and frequency-capping by querying system datasets to enforce a 30-day suppression window. Performed rigorous post-migration validation using AEP Query Service, Adobe Analytics, and Customer Journey Analytics to reconcile events, validate profile counts, and produce business-ready reporting. Supported AEP Mobile SDK POC and mobile telemetry parity checks, and documented implementation patterns, dataset mapping templates, and runbooks to institutionalize delivery practices.",
@@ -99,7 +115,7 @@ const resumeData = {
       "repo": [],
       "tech": [
         "JavaScript",
-        "python",
+        "Python",
         "Flask"
       ]
     },
@@ -135,7 +151,7 @@ const resumeData = {
       "tech": [
         "Firebase",
         "JavaScript",
-        "python",
+        "Python",
         "Flask"
       ]
     }
