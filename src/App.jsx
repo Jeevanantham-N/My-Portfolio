@@ -187,14 +187,30 @@ const SectionTitle = ({ children, dark }) => (
 );
 
 function Nav({ data, dark }) {
+  // Custom scroll function to fix the header overlap and keep the URL clean
+  const scrollToSection = (e, id) => {
+    e.preventDefault(); // This stops the URL from updating with #id
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 80; // Height of your sticky header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <header className={`sticky top-0 z-40 ${dark ? 'bg-black/80 border-b border-gray-800' : 'bg-white/80 border-b border-gray-200'} backdrop-blur-sm`}>
       <nav className={`max-w-7xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between text-base font-medium ${dark ? 'text-gray-200' : 'text-gray-800'}`}>
         <div className="tracking-wide font-medium">{data.name}</div>
         <div className="flex items-center gap-6">
-          <a href="#projects" className="hidden md:inline hover:opacity-80 transition-opacity">Projects</a>
-          <a href="#experience" className="hidden md:inline hover:opacity-80 transition-opacity">Experience</a>
-          <a href="#contact" className={`${dark ? 'bg-white text-black' : 'bg-gray-900 text-white'} px-3 py-1.5 rounded-full hover:opacity-90 transition`}>Contact</a>
+          <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="hidden md:inline hover:opacity-80 transition-opacity cursor-pointer">Projects</a>
+          <a href="#experience" onClick={(e) => scrollToSection(e, 'experience')} className="hidden md:inline hover:opacity-80 transition-opacity cursor-pointer">Experience</a>
+          <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className={`${dark ? 'bg-white text-black' : 'bg-gray-900 text-white'} px-3 py-1.5 rounded-full hover:opacity-90 transition cursor-pointer`}>Contact</a>
         </div>
       </nav>
     </header>
