@@ -177,7 +177,7 @@ const resumeData = {
 
 // small circular bullet
 const BulletIcon = ({ className = '' }) => (
-  <svg width="12" height="12" viewBox="0 0 12 12" className={`flex-shrink-0 w-3 h-3 mt-2 ${className}`} xmlns="http://www.w3.org/2000/svg" aria-hidden>
+  <svg width="12" height="12" viewBox="0 0 12 12" className={`flex-shrink-0 w-3 h-3 mt-4 ${className}`} xmlns="http://www.w3.org/2000/svg" aria-hidden>
     <circle cx="6" cy="6" r="5" fill="currentColor" />
   </svg>
 );
