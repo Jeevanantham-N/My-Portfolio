@@ -14,7 +14,7 @@ const resumeData = {
   "name": "N Jeevanantham",
   "email": "jeevasatn@gmail.com",
   "phone": "+91 98425 98260",
-  "location": "Salem, India",
+  "location": "Bengaluru, India",
   "linkedin": "https://www.linkedin.com/in/jeevanantham001/",
   "github": "https://github.com/Jeevanantham-N",
   "role": "Senior Associate Technology L1",
