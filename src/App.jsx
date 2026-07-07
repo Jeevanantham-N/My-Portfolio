@@ -291,7 +291,7 @@ function ExperienceTimeline({ experiences, dark }) {
             <ul className={`mt-4 space-y-3 text-sm leading-relaxed ${dark ? 'text-gray-300' : 'text-gray-700'}`}>
               {exp.bullets.map((b, i) => (
                 <li key={i} className="flex gap-3 items-start">
-                  <BulletIcon className={`mt-2 ${dark ? 'text-gray-400' : 'text-gray-400'}`} />
+                  <BulletIcon className={`mt-1.5 ${dark ? 'text-gray-400' : 'text-gray-400'}`} />
                   <span>{b}</span>
                 </li>
               ))}
