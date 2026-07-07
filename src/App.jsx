@@ -17,7 +17,7 @@ const resumeData = {
   "location": "Salem, India",
   "linkedin": "https://www.linkedin.com/in/jeevanantham001/",
   "github": "https://github.com/Jeevanantham-N",
-  "role": "Software Engineer",
+  "role": "Senior Associate Technology L1",
   "summary": "Adobe-certified expert driving data-driven solutions and enterprise platform reliability using AEP, Customer Journey Analytics, Adobe Journey Optimizer, Adobe Orchestration Campaign, AEP Query Service — delivering clean actionable insights and automated, high-scale operations.",
   "experiences": [
     {
