@@ -291,7 +291,7 @@ function ExperienceTimeline({ experiences, dark }) {
             <ul className={`mt-4 space-y-3 text-sm leading-relaxed ${dark ? 'text-gray-300' : 'text-gray-700'}`}>
               {exp.bullets.map((b, i) => (
                 <li key={i} className="flex gap-3 items-start">
-                  <BulletIcon className={`mt-4 ${dark ? 'text-gray-400' : 'text-gray-400'}`} />
+                  <BulletIcon className={`mt-2 ${dark ? 'text-gray-400' : 'text-gray-400'}`} />
                   <span>{b}</span>
                 </li>
               ))}
@@ -366,7 +366,7 @@ function ToolsAndCerts({ tools, certs, awards, dark }) {
           <ul className={`space-y-3 text-sm leading-relaxed ${dark ? 'text-gray-300' : 'text-gray-700'}`}>
             {certs.map((c, i) => (
               <li key={i} className="flex items-start gap-3">
-                <BulletIcon className={dark ? 'text-gray-400' : 'text-gray-400'} />
+                <BulletIcon className={`mt-1.5 ${dark ? 'text-gray-400' : 'text-gray-400'}`} />
                 <span>{c}</span>
               </li>
             ))}
@@ -379,7 +379,7 @@ function ToolsAndCerts({ tools, certs, awards, dark }) {
             {awards.map((a, i) => (
               <li key={i}>
                 <div className="flex items-start gap-3 font-semibold">
-                  <BulletIcon className={dark ? 'text-gray-400' : 'text-gray-400'} />
+                  <BulletIcon className={`mt-1.5 ${dark ? 'text-gray-400' : 'text-gray-400'}`} />
                   <span className={`${dark ? 'text-gray-100' : 'text-gray-900'}`}>{a.title} {a.date ? <span className={`font-normal ${dark ? 'text-gray-400' : 'text-gray-600'}`}>({a.date})</span> : null}</span>
                 </div>
                 <p className={`pl-6 mt-1 text-sm ${dark ? 'text-gray-400' : 'text-gray-600'}`}>{a.desc}</p>
