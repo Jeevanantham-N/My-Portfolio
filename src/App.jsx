@@ -176,8 +176,9 @@ const resumeData = {
 };
 
 // small circular bullet
+// Removed mt-4 from the base string
 const BulletIcon = ({ className = '' }) => (
-  <svg width="12" height="12" viewBox="0 0 12 12" className={`flex-shrink-0 w-3 h-3 mt-4 ${className}`} xmlns="http://www.w3.org/2000/svg" aria-hidden>
+  <svg width="12" height="12" viewBox="0 0 12 12" className={`flex-shrink-0 w-3 h-3 ${className}`} xmlns="http://www.w3.org/2000/svg" aria-hidden>
     <circle cx="6" cy="6" r="5" fill="currentColor" />
   </svg>
 );
@@ -290,7 +291,7 @@ function ExperienceTimeline({ experiences, dark }) {
             <ul className={`mt-4 space-y-3 text-sm leading-relaxed ${dark ? 'text-gray-300' : 'text-gray-700'}`}>
               {exp.bullets.map((b, i) => (
                 <li key={i} className="flex gap-3 items-start">
-                  <BulletIcon className={dark ? 'text-gray-400' : 'text-gray-400'} />
+                  <BulletIcon className={`mt-4 ${dark ? 'text-gray-400' : 'text-gray-400'}`} />
                   <span>{b}</span>
                 </li>
               ))}
