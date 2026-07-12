@@ -20,7 +20,7 @@ const resumeData = {
   "linkedin": "https://www.linkedin.com/in/jeevanantham001/",
   "github": "https://github.com/Jeevanantham-N",
   "role": "Senior Associate Technology L1",
-  "summary": "Adobe-certified expert driving data-driven solutions and enterprise platform reliability using AEP, Customer Journey Analytics, Adobe Journey Optimizer, Adobe Orchestration Campaign, AEP Query Service — delivering clean actionable insights and automated, high-scale operations.",
+  "summary": "Adobe-certified Software Engineer with 5+ years of experience building and supporting enterprise-scale Adobe Experience Platform (AEP) solutions. Specialized in Adobe Journey Optimizer, Customer Journey Analytics, Query Service, Adobe Campaign Orchestration, and Real-Time CDP, delivering reliable customer journeys, scalable data pipelines, and production-ready marketing solutions.",
   "experiences": [
     {
       "title": "Senior Associate Technology L1",
@@ -56,7 +56,7 @@ const resumeData = {
     {
       "title": "Software Trainee - Internship",
       "company": "Granite River Labs Pvt Ltd.",
-      "location": "Bangaluru",
+      "location": "Bengaluru",
       "period": "12/2020 - 03/2021",
       "bullets": [
         "Developed a Real-Time USB/Serial Device Monitor using Python, PySerial, and Tkinter to support lab validation: enumerated ports, parsed device metadata, normalized identifiers, and displayed connected devices with grouped summaries and live counts.",
@@ -70,7 +70,7 @@ const resumeData = {
     {
       "degree": "BE CSE (Anna University)",
       "institution": "Knowledge Institute of Technology, Salem",
-      "period": "06/2016 - 10/2020"
+      "period": "06/2016 - 04/2020"
     }
   ],
   "tools": [
@@ -100,7 +100,7 @@ const resumeData = {
       ]
     },
     {
-      "title": "Digital Federal Credit Union Digital Marketing Solutions",
+      "title": "Digital Banking Platform Migration to Adobe Experience Platform (DCU)",
       "desc": "Part of a multi-year digital transformation engagement for a major US financial institution. Responsibilities included sustaining legacy Adobe Analytics operations and contributing to a two-year migration to Adobe Experience Platform (AEP). Converted legacy tracking into AEP Web SDK implementations via Adobe Launch, designed XDM schemas and supporting datasets to match Real-Time CDP event and profile models, and implemented dataflows to ingest, persist, and unify profile and event data. Built audiences for marketing activation and contributed to real-time orchestration in Adobe Journey Optimizer (AJO) — implementing abandoned-loan re-targeting and designing a secure inbox messaging capability using Custom Actions with payload throttling. Developed dataset-driven suppression checks and frequency-capping by querying system datasets to enforce a 30-day suppression window. Performed rigorous post-migration validation using AEP Query Service, Adobe Analytics, and Customer Journey Analytics to reconcile events, validate profile counts, and produce business-ready reporting. Supported AEP Mobile SDK POC and mobile telemetry parity checks, and documented implementation patterns, dataset mapping templates, and runbooks to institutionalize delivery practices.",
       "repo": [],
       "tech": [
@@ -171,7 +171,7 @@ const resumeData = {
       "desc": "Recognized with the 'Extra Mile Award' for consistently exceeding expectations, maintaining high data quality, and delivering outstanding performance during the AEP migration and optimization phases."
     },
     {
-      "title": "Gold badge from Hackerrank",
+      "title": "HackerRank Gold Badge",
       "desc": "Awarded Gold badge on HackerRank after solving 100+ problems."
     }
   ]
@@ -270,7 +270,7 @@ function Hero({ data, dark }) {
                   ? 'border-gray-700 text-gray-200 hover:bg-gray-900'
                   : 'border-gray-300 text-gray-700 hover:bg-gray-50'
               }`} >
-              View CV
+              View Resume
             </a>
           </div>
 
@@ -286,7 +286,7 @@ function Hero({ data, dark }) {
             <div className="text-xs text-gray-400 uppercase tracking-wide">Role</div>
             <div className={`mt-2 text-lg font-semibold ${dark ? 'text-white' : 'text-gray-900'}`}>{data.role}</div>
             <div className={`${dark ? 'text-gray-400' : 'text-gray-600'} mt-4 text-sm leading-relaxed`}>
-              Certified Adobe Analytics Developer & AEP practitioner. Focused on tracking, schema design, data validation, and migration.
+              Adobe-certified engineer specializing in Adobe Experience Platform, Journey Optimizer, Query Service, Customer Journey Analytics, and enterprise-scale customer data solutions.
             </div>
             <div className="mt-6">
               <a href="#contact" className={`px-4 py-2 rounded-full border text-sm transition ${dark ? 'border-gray-700 text-gray-200 hover:bg-gray-900' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}>Email</a>
@@ -471,7 +471,7 @@ function Contact({ data, dark }) {
           </div>
 
           <div>
-            <label className={`block text-sm mb-1.5 ${dark ? 'text-gray-300' : 'text-gray-600'}`} htmlFor="subject">Subject</label>
+            <label className={`block text-sm mb-1.5 ${dark ? 'text-gray-300' : 'text-gray-600'}`} htmlFor="subject">How can I help?</label>
             <input id="subject" name="subject_line"
                    className={`w-full py-2 px-3 text-sm rounded-lg focus:outline-none transition ${dark ? 'bg-[#0b0b0b] border border-gray-700 text-gray-200 focus:ring-1 focus:ring-gray-600' : 'bg-white border border-gray-200 text-gray-900 focus:ring-1 focus:ring-gray-300'}`}
                    value={subject} onChange={(e) => setSubject(e.target.value)} />
