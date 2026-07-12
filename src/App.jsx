@@ -1,6 +1,6 @@
 // App.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import resumePdf from './assets/resume.pdf';
+// import resumePdf from './assets/resume.pdf';
 import emailjs from '@emailjs/browser';
 
 /* -------------------------
@@ -9,6 +9,8 @@ import emailjs from '@emailjs/browser';
 const EMAILJS_SERVICE_ID = 'service_4z33hi3';
 const EMAILJS_TEMPLATE_ID = 'template_0dzqbif';
 const EMAILJS_PUBLIC_KEY = 'vD1FQ2paQhZ92PXCg';
+
+const resumeLink = "https://flowcv.com/resume/shrn2el5qnso";
 
 const resumeData = {
   "name": "N Jeevanantham",
@@ -244,9 +246,21 @@ function Hero({ data, dark }) {
               View Projects
             </a>
 
-            <a href={resumePdf} download
+            {/* <a href={resumePdf} download
                className={`px-4 py-2 rounded-full border text-sm transition ${dark ? 'border-gray-700 text-gray-200 hover:bg-gray-900' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}>
               Download CV
+            </a> */}
+
+            <a
+              href= {resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-4 py-2 rounded-full border text-sm transition ${
+                dark
+                  ? 'border-gray-700 text-gray-200 hover:bg-gray-900'
+                  : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+              }`} >
+              View CV
             </a>
           </div>
 
